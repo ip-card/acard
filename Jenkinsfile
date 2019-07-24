@@ -1,8 +1,15 @@
 @Library('pipeline-library-demo')_
 
+def sayHello1(String name = 'human') {
+  echo "Hello, ${name}."
+  echo "Hello, ${name}."
+}
 node('maven-label') {
    def mvnHome
    
+   stage('shared-lib-ex'){
+      sayHello2 'IntelliPath'
+   }
    stage('shared-lib-ex'){
       sayHello 'IntelliPath'
    }
