@@ -11,7 +11,7 @@ node('maven-label') {
       sayHello1 'IntelliPath'
    }
    stage('shared-lib-ex'){
-      sayHello 'IntelliPath'
+      sayHello 'ravi'
    }
    stage('Preparation') { 
       
