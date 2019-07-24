@@ -1,5 +1,11 @@
+@Library('pipeline-library-demo')_
+
 node('maven-label') {
    def mvnHome
+   
+   stage('shared-lib-ex'){
+      sayHello 'IntelliPath'
+   }
    stage('Preparation') { 
       
       git 'https://github.com/ip-card/acard.git'
