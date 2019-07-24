@@ -8,7 +8,7 @@ node('maven-label') {
    def mvnHome
    
    stage('shared-lib-ex'){
-      sayHello2 'IntelliPath'
+      sayHello1 'IntelliPath'
    }
    stage('shared-lib-ex'){
       sayHello 'IntelliPath'
